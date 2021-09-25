@@ -38,17 +38,12 @@
     text-align: center;
 }
 
-@mixin todoParrafo($color,$textAlign,$fontWeight,$lineHeight,$letterSpacing){
-    color: $color;
-    text-align: $textAlign;
-    font-weight: $fontWeight;
-    line-height: $lineHeight;
-    letter-spacing: $letterSpacing;
-}
-
 .todo__parrafo{
-    @include todoParrafo($beige, justify,100,1.5,.5px)
-    
+    color: $beige;
+    text-align: justify;
+    font-weight: 100;
+    line-height: 1.5;
+    letter-spacing: .5px;
 }
 
 main{
@@ -316,7 +311,7 @@ form{
 
     /*Primeros Pasos*/
     .mainPp{
-        height: 2700px;
+        height: 3000px;
     }
 
     .primerosPasos{
