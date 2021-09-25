@@ -1,0 +1,275 @@
+@charset "UTF-8";
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; }
+
+#navPisar {
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh; }
+
+#header {
+  width: 100%;
+  position: fixed; }
+  #header a {
+    color: #192d49;
+    transition: .5s; }
+  #header a:hover {
+    color: #F7882F; }
+
+.todo__titulo {
+  text-align: center;
+  color: #F7C331; }
+
+.todo__subtitulo {
+  color: #F7882F;
+  text-align: center; }
+
+.todo__parrafo {
+  color: #DCC7AA;
+  text-align: justify;
+  font-weight: 100;
+  line-height: 1.5;
+  letter-spacing: 0.5px; }
+
+main {
+  padding-top: 4rem;
+  background-color: #192d49; }
+
+#divPisar {
+  background-color: #DCC7AA;
+  line-height: 10vh; }
+
+/* INDEX */
+.indexContenido {
+  display: grid;
+  grid-template-areas: "video1 texto1 texto1" "texto2 texto2 video2";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40vh 40vh;
+  justify-items: stretch;
+  align-items: center;
+  padding: 5% 5% 2% 5%;
+  grid-row-gap: 5vh; }
+  .indexContenido .indexVideo {
+    align-self: stretch;
+    padding-left: 4%;
+    animation-name: giraVideo;
+    animation-duration: .1s;
+    animation-iteration-count: 10; }
+    .indexContenido .indexVideo--izquierda {
+      grid-area: video1; }
+    .indexContenido .indexVideo--derecha {
+      grid-area: video2; }
+  .indexContenido .indexContenido__textoDerecha {
+    grid-area: texto1;
+    padding: 10% 0% 10% 10%; }
+  .indexContenido .indexContenido__textoIzquierda {
+    grid-area: texto2;
+    padding: 10% 10% 10% 0%; }
+
+/* HISTORIAS */
+.historiaContenido {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2vw;
+  padding: 3vw; }
+  .historiaContenido .historiaContenido__img {
+    width: 100%;
+    height: auto; }
+
+/* PRIMEROS PASOS */
+.primerosPasos {
+  padding: 5% 5% 5% 5%; }
+  .primerosPasos .titleDiv {
+    padding: 0% 20% 3% 20%; }
+  .primerosPasos .htmlCssJs {
+    display: grid;
+    grid-template-areas: "html       fotoCss   js" "fotoHtml   css       fotoJs";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    row-gap: 5%; }
+    .primerosPasos .htmlCssJs img {
+      padding-top: 8%; }
+
+/* DONDE */
+.mainDonde {
+  padding: 15% 10% 10% 10%; }
+
+#spanTable {
+  margin-right: 1%; }
+
+/*Estilo de tabla 1 */
+#tabla1 {
+  color: #DCC7AA; }
+  #tabla1 ul {
+    padding-left: 0; }
+  #tabla1 li {
+    list-style: none; }
+  #tabla1 a {
+    text-decoration: none;
+    color: #F7882F; }
+
+/* CONTACTO */
+.mainContacto {
+  padding: 10% 10% 10% 10%; }
+
+#formPisar input, #formPisar select, #formPisar textarea {
+  background-color: #DCC7AA;
+  transition: .5s; }
+
+#formPisar input:hover, #formPisar select:hover, #formPisar textarea:hover {
+  transform: scale(1.05, 1.05); }
+
+#formPisar button {
+  background-color: #F7882F;
+  color: #192d49; }
+
+form label {
+  color: #F7882F; }
+
+@keyframes giraVideo {
+  from {
+    transform: rotate(-2deg); }
+  to {
+    transform: rotate(2deg); } }
+
+/* RESPONSIVE A DIFERENTES TAMAÑOS DE PANTALLA*/
+@media only screen and (max-width: 600px) {
+  /* GENERAL */
+  main {
+    padding-top: 12vh; }
+  .todo__parrafo {
+    font-size: .7rem; }
+  .todo__titulo {
+    font-size: 1rem; }
+  .todo__subtitulo {
+    font-size: .9rem; }
+  /* INDEX */
+  .indexContenido {
+    display: grid;
+    grid-template-areas: "video1" "texto1" "video2" "texto2";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 0 4vw;
+    align-items: stretch;
+    justify-items: stretch; }
+    .indexContenido .indexContenido__textoIzquierda {
+      padding: 0 0 0 0; }
+    .indexContenido .indexContenido__textoDerecha {
+      padding: 0 0 10vw 0; }
+  .indexVideo {
+    animation-duration: 0s; }
+  /* HISTORIAS */
+  /* Reordenamiento GRID */
+  .historiaContenido {
+    grid-template-columns: 100%;
+    grid-template-areas: "img1" "txt1" "img2" "txt2" "img3" "txt3" "img4" "txt4";
+    grid-gap: 5vw; }
+    .historiaContenido #img1 {
+      grid-area: img1; }
+    .historiaContenido #img2 {
+      grid-area: img2; }
+    .historiaContenido #img3 {
+      grid-area: img3; }
+    .historiaContenido #img4 {
+      grid-area: img4; }
+    .historiaContenido #txt1 {
+      grid-area: txt1; }
+    .historiaContenido #txt2 {
+      grid-area: txt2; }
+    .historiaContenido #txt3 {
+      grid-area: txt3; }
+    .historiaContenido #txt4 {
+      grid-area: txt4; }
+  /*Primeros Pasos*/
+  .mainPp {
+    height: 2700px; }
+  .primerosPasos .titleDiv {
+    padding: 0% 3% 3% 3%; }
+  .primerosPasos .htmlCssJs {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "fotoHtml"  "html"  "fotoCss"  "css"  "fotoJs"  "js";
+    justify-content: flex-start;
+    align-content: flex-start;
+    justify-items: stretch;
+    align-items: stretch;
+    row-gap: 5%; }
+    .primerosPasos .htmlCssJs img {
+      padding-top: 0%; }
+    .primerosPasos .htmlCssJs #fotoHtml {
+      grid-area: fotoHtml; }
+    .primerosPasos .htmlCssJs #html {
+      grid-area: html; }
+    .primerosPasos .htmlCssJs #fotoCss {
+      grid-area: fotoCss; }
+    .primerosPasos .htmlCssJs #css {
+      grid-area: css; }
+    .primerosPasos .htmlCssJs #fotoJs {
+      grid-area: fotoJs; }
+    .primerosPasos .htmlCssJs #js {
+      grid-area: js; }
+  /* DONDE */
+  .mainDonde {
+    padding-top: 12vh; }
+  form {
+    padding-top: 10vh; }
+  /* FOOTER */
+  #divPisar {
+    line-height: 5vh; } }
+
+/* Aplico un rango ya que más de eso es como está pensado el CSS original */
+@media only screen and (min-width: 600px) and (max-width: 1220px) {
+  /* GENERAL */
+  main {
+    padding-top: 25vw; }
+  .todo__titulo {
+    font-size: 2rem;
+    align-self: center;
+    padding: 0 0 0 5%; }
+  .primerosPasos {
+    padding: .5%; }
+    .primerosPasos .titleDiv {
+      padding: 0% 1% 1% 1%; }
+    .primerosPasos .htmlCssJs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "fotoHtml fotoCss fotoJs"  "html     css     js";
+      grid-template-rows: auto;
+      justify-content: space-between;
+      align-content: space-between;
+      justify-items: start;
+      align-items: center;
+      row-gap: 5%;
+      padding-bottom: 2vh; }
+      .primerosPasos .htmlCssJs img {
+        padding-top: 0%; }
+      .primerosPasos .htmlCssJs #fotoHtml {
+        grid-area: fotoHtml; }
+      .primerosPasos .htmlCssJs #html {
+        grid-area: html; }
+      .primerosPasos .htmlCssJs #fotoCss {
+        grid-area: fotoCss; }
+      .primerosPasos .htmlCssJs #css {
+        grid-area: css; }
+      .primerosPasos .htmlCssJs #fotoJs {
+        grid-area: fotoJs; }
+      .primerosPasos .htmlCssJs #js {
+        grid-area: js; }
+      .primerosPasos .htmlCssJs .textDiv {
+        height: 60vh;
+        padding: 4px; }
+  /* DÓNDE */
+  #formPisar {
+    padding-left: 10%;
+    padding-right: 10%; } }
+
+/* Sólo para tamaño notebook */
+@media only screen and (min-width: 1220px) {
+  #formPisar {
+    padding-left: 25%;
+    padding-right: 25%; } }
