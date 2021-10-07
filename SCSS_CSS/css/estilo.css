@@ -78,6 +78,8 @@ main {
   .historiaContenido .historiaContenido__img {
     width: 100%;
     height: auto; }
+  .historiaContenido .historiaContenido__texto {
+    height: 100%; }
 
 /* PRIMEROS PASOS */
 .primerosPasos {
@@ -185,6 +187,8 @@ form label {
       grid-area: txt3; }
     .historiaContenido #txt4 {
       grid-area: txt4; }
+  .historiaContenido .historiaContenido__texto {
+    height: 20%; }
   /*Primeros Pasos*/
   .mainPp {
     height: 3000px; }

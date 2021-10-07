@@ -113,6 +113,10 @@ main{
         width: 100%;
         height: auto;
     }
+
+    .historiaContenido__texto{
+        height: 100%;
+    }
 }
 
 /* PRIMEROS PASOS */
@@ -306,6 +310,12 @@ form{
         }
         #txt4{
         grid-area: txt4;
+        }
+    }
+
+    .historiaContenido{
+        .historiaContenido__texto{
+            height: 20%;
         }
     }
 
