@@ -53,8 +53,8 @@ main {
   grid-template-rows: 40vh 40vh;
   justify-items: stretch;
   align-items: center;
-  padding: 5% 5% 2% 5%;
-  grid-row-gap: 5vh; }
+  padding: 5% 5% 10% 5%;
+  grid-row-gap: 15%; }
   .indexContenido .indexVideo {
     align-self: stretch;
     padding-left: 4%;
