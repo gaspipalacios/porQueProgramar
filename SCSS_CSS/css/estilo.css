@@ -279,43 +279,66 @@ form label {
   /* GENERAL */
   main {
     padding-top: 25vw; }
+  .todo__parrafo {
+    font-size: 1rem; }
+  .todo__subtitulo {
+    font-size: 1.2rem; }
   .todo__titulo {
     font-size: 2rem;
     align-self: center;
     padding: 0 0 0 5%; }
+  /* INDEX */
+  .indexContenido {
+    display: grid;
+    grid-template-areas: "video1" "texto1" "video2" "texto2";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 0 4vw;
+    align-items: stretch;
+    justify-items: stretch;
+    grid-row-gap: 5%; }
+    .indexContenido .indexContenido__textoIzquierda {
+      padding: 0 0 15% 0; }
+    .indexContenido .indexContenido__textoDerecha {
+      padding: 0 0 0 0; }
+    .indexContenido .indexVideo {
+      padding: 0;
+      animation-duration: 0s; }
+  .main__historias {
+    padding-right: 5%;
+    padding-left: 5%; }
+  .historiaContenido {
+    align-items: center; }
+    .historiaContenido .historiaContenido__img {
+      width: 350px;
+      height: 350px; }
+    .historiaContenido .historiaContenido__texto {
+      height: 100%; }
+      .historiaContenido .historiaContenido__texto--derecha {
+        padding: 0 0 0 5%; }
+      .historiaContenido .historiaContenido__texto--izquierda {
+        padding: 0 5% 0 0; }
+  /* PRIMEROS PASOS */
+  .mainPp {
+    padding-top: 12%; }
   .primerosPasos {
-    padding: .5%; }
+    padding: 0 5% 5% 5%; }
     .primerosPasos .titleDiv {
-      padding: 0% 1% 1% 1%; }
+      padding: 0% 20% 3% 20%; }
     .primerosPasos .htmlCssJs {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: "fotoHtml fotoCss fotoJs"  "html     css     js";
-      grid-template-rows: auto;
-      justify-content: space-between;
-      align-content: space-between;
-      justify-items: start;
+      grid-template-areas: "html       fotoCss   js" "fotoHtml   css       fotoJs";
+      justify-content: center;
+      align-content: center;
+      justify-items: center;
       align-items: center;
-      row-gap: 5%;
-      padding-bottom: 2vh; }
+      row-gap: 1%; }
       .primerosPasos .htmlCssJs img {
-        padding-top: 0%; }
-      .primerosPasos .htmlCssJs #fotoHtml {
-        grid-area: fotoHtml; }
-      .primerosPasos .htmlCssJs #html {
-        grid-area: html; }
-      .primerosPasos .htmlCssJs #fotoCss {
-        grid-area: fotoCss; }
-      .primerosPasos .htmlCssJs #css {
-        grid-area: css; }
-      .primerosPasos .htmlCssJs #fotoJs {
-        grid-area: fotoJs; }
-      .primerosPasos .htmlCssJs #js {
-        grid-area: js; }
-      .primerosPasos .htmlCssJs .textDiv {
-        height: 60vh;
-        padding: 4px; }
-  /* DÓNDE */
+        padding-top: 8%; }
+  /* CONTACTO */
+  .mainContacto {
+    height: 1300px;
+    padding: 30% 10% 5% 10%; }
   #formPisar {
     padding-left: 10%;
     padding-right: 10%; } }
