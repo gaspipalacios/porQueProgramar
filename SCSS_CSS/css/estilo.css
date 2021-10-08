@@ -6,9 +6,14 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif; }
 
+main {
+  background-image: linear-gradient(90deg, #5c89c9 0, #2d4d7a 10%, #192d49 35%, #192d49 75%, #2d4d7a 90%, #5c89c9 100%);
+  padding-top: 4rem; }
+
 #navPisar {
   padding-top: 1.5vh;
-  padding-bottom: 1.5vh; }
+  padding-bottom: 1.5vh;
+  background-image: linear-gradient(115deg, #ac9779 0, #DCC7AA 40%, #DCC7AA 70%, #ac9779 100%); }
 
 #header {
   width: 100%;
@@ -37,12 +42,8 @@
   line-height: 1.5;
   letter-spacing: .5px; }
 
-main {
-  padding-top: 4rem;
-  background-color: #192d49; }
-
 #divPisar {
-  background-color: #DCC7AA;
+  background-image: linear-gradient(115deg, #ac9779 0, #DCC7AA 25%, #DCC7AA 75%, #ac9779 100%);
   line-height: 10vh; }
 
 /* INDEX */

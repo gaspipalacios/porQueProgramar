@@ -9,9 +9,15 @@
     font-family: $fuente;
 }
 
+main{
+    background-image: linear-gradient(90deg, $azul2 0, $azul3 10%, $azul 35%, $azul 75%, $azul3 90%, $azul2 100%);
+    padding-top: 4rem;
+}
+
 #navPisar{
     padding-top: 1.5vh;
     padding-bottom: 1.5vh;
+    background-image: linear-gradient(115deg, $beige2 0, $beige 40%, $beige 70%, $beige2 100%);
 }
 
 #header{
@@ -50,14 +56,10 @@
     line-height: 1.5;
     letter-spacing: .5px;
 }
-
-main{
-    padding-top: 4rem;
-    background-color: $azul;
-}
+  
 
 #divPisar{
-    background-color: #DCC7AA;
+    background-image: linear-gradient(115deg, $beige2 0, $beige 25%, $beige 75%, $beige2 100%);
     line-height: 10vh; 
 }
 
