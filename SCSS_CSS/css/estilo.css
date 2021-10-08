@@ -189,7 +189,8 @@ form label {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     padding: 0 4vw;
     align-items: stretch;
-    justify-items: stretch; }
+    justify-items: stretch;
+    grid-row-gap: 5%; }
     .indexContenido .indexContenido__textoIzquierda {
       padding: 0 0 15% 0; }
     .indexContenido .indexContenido__textoDerecha {
@@ -233,7 +234,7 @@ form label {
       padding-bottom: 20%; }
   /*Primeros Pasos*/
   .mainPp {
-    height: 3000px; }
+    height: 3100px; }
   .primerosPasos .titleDiv {
     padding: 0% 3% 3% 3%; }
   .primerosPasos .htmlCssJs {
@@ -244,7 +245,7 @@ form label {
     align-content: flex-start;
     justify-items: stretch;
     align-items: stretch;
-    row-gap: 5%; }
+    row-gap: 4%; }
     .primerosPasos .htmlCssJs img {
       padding-top: 0%; }
     .primerosPasos .htmlCssJs #fotoHtml {
