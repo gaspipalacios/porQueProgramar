@@ -36,6 +36,11 @@
 .todo__subtitulo{
     color: $naranja;
     text-align: center;
+
+    &--donde{
+        text-align: left;
+        margin-top: 10%;
+    }
 }
 
 .todo__parrafo{
@@ -103,19 +108,64 @@ main{
 
 /* HISTORIAS */
 
+.main__historias{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
 .historiaContenido{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2vw;
+    grid-template-areas: "img1 txt1 txt1"
+                         "txt2 txt2 img2"
+                         "img3 txt3 txt3"
+                         "txt4 txt4 img4";
+    row-gap: 7vw;
     padding: 3vw;
+    
+    #img1{
+        grid-area: img1;
+    }
+    #txt1{
+        grid-area: txt1;
+    }
 
+    #img2{
+        grid-area: img2;
+    }
+    #txt2{
+        grid-area: txt2;
+    }
+
+    #img3{
+        grid-area: img3;
+    }
+    #txt3{
+        grid-area: txt3;
+    }
+
+    #img4{
+        grid-area: img4;
+    }
+    #txt4{
+        grid-area: txt4;
+    }
+
+    
     .historiaContenido__img{
-        width: 100%;
-        height: auto;
+        width: 300px;
+        height: 300px;
     }
 
     .historiaContenido__texto{
         height: 100%;
+        
+        &--derecha{
+            padding: 1% 0 1% 5%;
+        }
+
+        &--izquierda{
+            padding: 1% 5% 1% 0;
+        }
     }
 }
 
@@ -147,19 +197,20 @@ main{
 /* DONDE */
 
 .mainDonde{
-    padding: 15% 10% 10% 10%;
+    padding: 10% 10% 10% 10%;
 }
 
 #spanTable{
     margin-right: 1%;
 }
 
-    /*Estilo de tabla 1 */
-    #tabla1{
+    /*Estilo de tabla */
+    #tabla{
         color: $beige;
-    
+        
         ul{
             padding-left: 0;
+            padding-top: 6%;
         }
 
         li{
@@ -168,10 +219,17 @@ main{
 
         a{
             text-decoration: none;
-            color: $naranja;
+            color: $beige;
+            transition: .5s;
         
         }
+
+        a:hover{//Animación
+            color: $amarillo;
+        }
     }
+
+    
 
 
 /* CONTACTO */
@@ -258,21 +316,26 @@ form{
         justify-items: stretch;
 
         .indexContenido__textoIzquierda{
-            padding: 0 0 0 0;
+            padding: 0 0 15% 0;
             
         }
     
         .indexContenido__textoDerecha{
-            padding: 0 0 10vw 0;
+            padding: 0 0 0 0;
         }
        
-    }
+    
        
     .indexVideo{
+        padding: 0;
         animation-duration: 0s;
     }
-    
+    }
     /* HISTORIAS */
+    .main__historias{
+        padding: 2%;
+        padding-top: 20%;
+    }
    /* Reordenamiento GRID */
    
    .historiaContenido{
@@ -311,12 +374,20 @@ form{
         #txt4{
         grid-area: txt4;
         }
+    
+
+    .historiaContenido__img{
+        width: 100%;
+        height: auto;
     }
 
-    .historiaContenido{
-        .historiaContenido__texto{
-            height: 20%;
-        }
+    .historiaContenido__texto{
+        height: 100%;
+        padding-top: 2%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 20%;
+    }
     }
 
     /*Primeros Pasos*/
@@ -375,6 +446,15 @@ form{
         padding-top: 12vh;
     }
 
+    #tabla{
+        width: max-content;
+
+        ul{
+            padding-top: 6%;
+        }
+    }
+
+    /* CONTACTO */
     form{
         padding-top: 10vh;
     }
