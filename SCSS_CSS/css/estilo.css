@@ -7,17 +7,18 @@
   font-family: "Roboto", sans-serif; }
 
 main {
-  background-image: linear-gradient(90deg, #5c89c9 0, #2d4d7a 10%, #192d49 35%, #192d49 75%, #2d4d7a 90%, #5c89c9 100%);
+  background-image: linear-gradient(90deg, #5c89c9 0, #2d4d7a 10%, #192d49 35%, #192d49 65%, #2d4d7a 90%, #5c89c9 100%);
   padding-top: 4rem; }
 
 #navPisar {
   padding-top: 1.5vh;
   padding-bottom: 1.5vh;
-  background-image: linear-gradient(115deg, #ac9779 0, #DCC7AA 40%, #DCC7AA 70%, #ac9779 100%); }
+  background-image: linear-gradient(90deg, #ac9779 0, #DCC7AA 40%, #DCC7AA 70%, #ac9779 100%); }
 
 #header {
   width: 100%;
-  position: fixed; }
+  position: fixed;
+  z-index: 999; }
   #header a {
     color: #192d49;
     transition: .5s; }
@@ -58,10 +59,7 @@ main {
   grid-row-gap: 15%; }
   .indexContenido .indexVideo {
     align-self: stretch;
-    padding-left: 4%;
-    animation-name: giraVideo;
-    animation-duration: .1s;
-    animation-iteration-count: 10; }
+    padding-left: 4%; }
     .indexContenido .indexVideo--izquierda {
       grid-area: video1; }
     .indexContenido .indexVideo--derecha {
@@ -113,7 +111,7 @@ main {
 .primerosPasos {
   padding: 5% 5% 5% 5%; }
   .primerosPasos .titleDiv {
-    padding: 0% 20% 3% 20%; }
+    padding: 0% 20% 4% 20%; }
   .primerosPasos .htmlCssJs {
     display: grid;
     grid-template-areas: "html       fotoCss   js" "fotoHtml   css       fotoJs";
@@ -165,12 +163,6 @@ main {
 form label {
   color: #F7882F; }
 
-@keyframes giraVideo {
-  from {
-    transform: rotate(-2deg); }
-  to {
-    transform: rotate(2deg); } }
-
 /* RESPONSIVE A DIFERENTES TAMAÑOS DE PANTALLA*/
 @media only screen and (max-width: 600px) {
   /* GENERAL */
@@ -197,8 +189,7 @@ form label {
     .indexContenido .indexContenido__textoDerecha {
       padding: 0 0 0 0; }
     .indexContenido .indexVideo {
-      padding: 0;
-      animation-duration: 0s; }
+      padding: 0; }
   /* HISTORIAS */
   .main__historias {
     padding: 2%;

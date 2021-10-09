@@ -10,8 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="SCSS_CSS/css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -49,29 +50,29 @@
 
             <div class="htmlCssJs">
                 
-                <div class="textDiv" id="html">
+                <div class="textDiv" id="html" data-aos="fade-up">
                     <h2 class="todo__subtitulo">HTML</h2><br>
                     <p class="todo__parrafo">En inglés Hyper Text Markup Language (lenguaje de marcas de hipertexto), es la columna vertebral de cualquier proceso de desarrollo web, sin el cual las páginas web no existirían. Hipertexto significa que el texto tiene enlaces, denominados hipervínculos, incrustados en el mismo. Cuando el usuario hace clic en una palabra o una frase que tiene un hipervínculo, se realiza una llamada a otra página web.</p><br>
                     <p class="todo__parrafo">El lenguaje de marcas indica que el texto puede convertirse en imágenes, tablas, enlaces, y otras representaciones. El código HTML es el que provee un marco general de cuál será el aspecto del sitio. HTML fue desarrollado por Tim Berners-Lee.</p>
                 </div>
                 
-                <img src="media/primerosPasos/css.png" alt="Logo css" id="fotoCss">
+                <img src="media/primerosPasos/css.png" alt="Logo css" id="fotoCss" data-aos="fade-down">
 
-                <div class="textDiv" id="js">
+                <div class="textDiv" id="js" data-aos="fade-up">
                     <h2 class="todo__subtitulo">JavaScript</h2><br>
-                    <p class="todo__parrafo">JavaScript es un lenguaje de programación o de secuencias de comandos que te permite implementar funciones complejas en páginas web, cada vez que una página web hace algo más que sentarse allí y mostrar información estática para que la veas, muestra oportunas actualizaciones de contenido, mapas interactivos, animación de Gráficos 2D/3D, desplazamiento de máquinas reproductoras de vídeo, etc. Puedes apostar que probablemente JavaScript está involucrado.</p><br>
+                    <p class="todo__parrafo">JavaScript es un lenguaje de programación o de secuencias de comandos que te permite implementar funciones complejas en páginas web, cada vez que una página web hace algo más que sentarse allí y mostrar información estática para que la veas, muestra oportunas actualizaciones de contenido, mapas interactivos, animación de Gráficos 2D/3D, desplazamiento de máquinas reproductoras de vídeo, etc. Puedes apostar que probablemente JavaScript está involucrado.</p>
                     <p class="todo__parrafo">Es la tercera capa del pastel de las tecnologías web estándar que te permite crear contenido de actualización dinámica, controlar multimedia, animar imágenes y mucho más.</p>
                 </div>
 
-                <img src="media/primerosPasos/html.png" alt="Logo html" id="fotoHtml">
+                <img src="media/primerosPasos/html.png" alt="Logo html" id="fotoHtml" data-aos="fade-down">
 
-                <div class="textDiv" id="css">    
+                <div class="textDiv" id="css" data-aos="fade-up">    
                     <h2 class="todo__subtitulo">CSS</h2><br>
                     <p class="todo__parrafo">Las siglas CSS (Cascading Style Sheets) significan «Hojas de estilo en cascada» y parten de un concepto simple pero muy potente: aplicar estilos (colores, formas, márgenes, etc...) a uno o varios documentos (generalmente documentos HTML, páginas webs) de forma masiva.</p><br>
                     <p class="todo__parrafo">Se le denomina estilos en cascada porque se aplican de arriba a abajo (siguiendo un patrón denominado herencia que trataremos más adelante) y en el caso de existir ambigüedad, se siguen una serie de normas para resolverla.</p>
                 </div>
                                             
-                <img src="media/primerosPasos/js.png" alt="Logo JavaScript" id="fotoJs">   
+                <img src="media/primerosPasos/js.png" alt="Logo JavaScript" id="fotoJs" data-aos="fade-down">   
 
             </div>
         </section>        
@@ -101,6 +102,11 @@
         </ul>
       </footer>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>

@@ -10,19 +10,20 @@
 }
 
 main{
-    background-image: linear-gradient(90deg, $azul2 0, $azul3 10%, $azul 35%, $azul 75%, $azul3 90%, $azul2 100%);
+    background-image: linear-gradient(90deg, $azul2 0, $azul3 10%, $azul 35%, $azul 65%, $azul3 90%, $azul2 100%);
     padding-top: 4rem;
 }
 
 #navPisar{
     padding-top: 1.5vh;
     padding-bottom: 1.5vh;
-    background-image: linear-gradient(115deg, $beige2 0, $beige 40%, $beige 70%, $beige2 100%);
+    background-image: linear-gradient(90deg, $beige2 0, $beige 40%, $beige 70%, $beige2 100%);
 }
 
 #header{
     width: 100%;
     position: fixed;
+    z-index: 999;
 
     a{
         color: $azul;
@@ -82,10 +83,6 @@ main{
         align-self: stretch;
         padding-left: 4%;
 
-        animation-name: giraVideo;
-        animation-duration: .1s;
-        animation-iteration-count: 10;
-
             &--izquierda{
                 grid-area: video1;
             }
@@ -93,7 +90,9 @@ main{
             &--derecha{
                 grid-area: video2;
             }
+
     }
+       
 
     .indexContenido__textoDerecha{
         grid-area: texto1;
@@ -177,7 +176,7 @@ main{
     padding: 5% 5% 5% 5%;
 
     .titleDiv{
-        padding: 0% 20% 3% 20%;
+        padding: 0% 20% 4% 20%;
     }
 
     .htmlCssJs{
@@ -189,7 +188,7 @@ main{
         justify-items: center;
         align-items: center;
         row-gap: 5%;
-
+        
         img{
             padding-top: 8%;
         }
@@ -273,15 +272,6 @@ form{
     }
 }
 
-//Animación video
-@keyframes giraVideo{
-    from{
-        transform: rotate(-2deg);
-    }
-    to{
-        transform: rotate(2deg);
-    }
- }
 
  /* RESPONSIVE A DIFERENTES TAMAÑOS DE PANTALLA*/
 
@@ -332,8 +322,7 @@ form{
        
     .indexVideo{
         padding: 0;
-        animation-duration: 0s;
-    }
+        }
     }
 
     /* HISTORIAS */

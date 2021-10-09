@@ -13,10 +13,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="SCSS_CSS/css/estilo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
-    <header class="animate__animated animate__slideInDown" id="header">
+    <header id="header">
         <nav class="navbar navbar-expand-lg navbar-light"   id="navPisar">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html">
@@ -44,14 +45,14 @@
             
             <!-- 1er artículo -->
                 <iframe class="indexVideo indexVideo--izquierda" src="https://www.youtube.com/embed/nl2rusv9i8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="indexContenido__textoDerecha">
+                <div class="indexContenido__textoDerecha" data-aos="fade-left">
                     <h1 class="todo__titulo">Desarrollador Web Full Stack</h1><br>
                     <p class="todo__parrafo">En este video el conocido Youtuber/Programador, Victor Robles, nos deja una guía de 7 pautas que podemos tener en cuenta a la hora de incursionar en el mundo de la programación. Teniendo así un pantallazo general de todo lo que podemos abarcar al ser un Desarrollado Web.</p>
                     <p class="todo__parrafo">1)Tener ganas, paciencia y perseverancia 2)Aprender HTML 3)Aprender CSS 4)Aprender JavaScript 5)Practicar 6)Aprender base de datos y SQL 6)Aprender un lenguaje de back-end 7)Dar el salto profesional</p>
                 </div>    
             
-           <!-- 2do artículo -->
-                <div class="indexContenido__textoIzquierda">
+            <!-- 2do artículo -->
+                <div class="indexContenido__textoIzquierda" data-aos="fade-right">
                     <h1 class="todo__titulo">Comenzando</h1><br>
                     <p class="todo__parrafo">Coderhouse es una plataforma de educación virtual con múltiples cursos y carreras relacionados a la programación, en su canal de YouTube hay gran cantidad y diversidad de mini cursos, webinars y charlas de gran utilidad que puedes visitar cuando quieras.</p>
                     <p class="todo__parrafo">En este video Gonzalo Loisotto, conocido en Twitch como Zalotron comparte sus primeros pasos en la programación (cómo empezó a programar sin código), lo que es programar vs codear, su opinión sobre el rol de la programación en el mundo y por qué todo el mundo debería aprender a programar.</p>
@@ -87,6 +88,10 @@
       </footer>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>

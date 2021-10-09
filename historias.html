@@ -12,11 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <header id="header">
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #DCC7AA;" id="navPisar">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navPisar">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html">
                 <img src="media/LOGO2.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
@@ -41,25 +42,25 @@
     <main class="main__historias">
     
         <section class="historiaContenido">
+
+            <img class="historiaContenido__img" id="img1" src="media/historias/hombre1.jpg" alt="historia1" data-aos="fade-left">
+            <img class="historiaContenido__img" id="img2" src="media/historias/mujer1.jpg" alt="historia2" data-aos="fade-right">
+            <img class="historiaContenido__img" id="img3" src="media/historias/hombre2.jpg" alt="historia3" data-aos="fade-left">
+            <img class="historiaContenido__img" id="img4" src="media/historias/mujer2.jpg" alt="historia4" data-aos="fade-right">
            
-            <img class="historiaContenido__img" id="img1" src="media/historias/hombre1.jpg" alt="historia1">
-            <img class="historiaContenido__img" id="img2" src="media/historias/mujer1.jpg" alt="historia2">
-            <img class="historiaContenido__img" id="img3" src="media/historias/hombre2.jpg" alt="historia3">
-            <img class="historiaContenido__img" id="img4" src="media/historias/mujer2.jpg" alt="historia4">
-           
-            <div class="historiaContenido__texto historiaContenido__texto--derecha" id="txt1"> 
+            <div class="historiaContenido__texto historiaContenido__texto--derecha" id="txt1" data-aos="fade-left"> 
                 <p class="todo__parrafo">Soy Martín Ibáñez, tengo 33 años. Me dedico al desarrollo de video juegos, aunque además soy Contador. Luego de trabajar 5 años en una oficina, me di cuenta que ese estilo de vida no me hacía feliz. Al comienzo no tenía grandes expectativas de poder dedicarme a la programación aprendiendo en cursos cortos lo que otras personas aprenden en años de formación, sin embargo me embarqué en el primero de ellos en “Coderhouse”, donde aprendí las bases y a partir de ello fui especializándome.</p><br>
                 <p class="todo__parrafo">Actualmente soy un nómada digital, he recorrido 25 países mientras trabajo y consigo nuevos clientes. Es en base a mi experiencia, que quiero animar a todas aquellas personas que se encuentren en la duda a que lo intenten, a que se arriesguen a dar ese primer gran paso.</p>
             </div>
-            <div class="historiaContenido__texto historiaContenido__texto--izquierda" id="txt2"> 
+            <div class="historiaContenido__texto historiaContenido__texto--izquierda" id="txt2" data-aos="fade-right"> 
                 <p class="todo__parrafo">Mi nombre es Teresa Imas, tengo 31 años y soy de Corrientes, Argentina. Llegué al mundo de la programación por medio de un compañero con el que trabajamos por 3 años como cajeros en un supermercado, él me motivó a estudiar programación de forma autodidacta en un comienzo y con el tiempo me fui especializando en Diseño UX/UI.</p><br>
                 <p class="todo__parrafo">Actualmente tenemos una empresa que se encarga del desarrollo completo de sitios web y apps, donde yo me especializo en la experiencia del usuario e interfaz. A la par, estamos montando una fundación para aquellas personas que desean introducirse al mundo del desarrollo y no cuentan con formación previa ni con recursos económicos para llevarlo a cabo.</p>
             </div>
-            <div class="historiaContenido__texto historiaContenido__texto--derecha" id="txt3"> 
+            <div class="historiaContenido__texto historiaContenido__texto--derecha" id="txt3" data-aos="fade-left"> 
                 <p class="todo__parrafo">Mi nombre es Lucas Tarasconi, tengo 26 años y soy de La Pampa, Argentina. Desde antes de terminar el secundario fui haciendo varios trabajos para aportar económicamente a los gastos de mi hogar, al mismo tiempo ahorrando para poder comprar mi primer notebook a la edad de 21 años y fue cuando conocí “freeCodeCamp” donde comencé a formarme como programador web.</p><br>
                 <p class="todo__parrafo">Actualmente, me dedico al desarrollo web full stack, donde mis principales habilidades son de diseño. Pero mi objetivo ahora es perfeccionarme en back end, por ello estoy haciendo una especialización para poder brindar un servicio más completo a mis clientes.</p>
             </div>
-            <div class="historiaContenido__texto historiaContenido__texto--izquierda" id="txt4"> 
+            <div class="historiaContenido__texto historiaContenido__texto--izquierda" id="txt4" data-aos="fade-right"> 
                 <p class="todo__parrafo">Hola, soy Jorgelina Suarez, ingeniera en sistemas egresada de la Universidad Tecnológica de Córdoba. Desde muy joven sentí interés por el mundo de la tecnología y fue en el último año de la carrera que fui descubriendo mi pasión por la programación, especialmente por el desarrollo back end.</p><br>
                 <p class="todo__parrafo">Una de las razones por la que me considero una apasionada de esto es porque me permite fusionar lo que me apasiona con la flexibilidad horaria y un buen ingreso económico. Considero el equilibrio entre las diferentes actividades de mi vida como un aspecto fundamental a tener en cuenta en mi día a día y me cuesta imaginar otro trabajo que me brinde todas las oportunidades halladas en este mundo de la programación.</p>
             </div>
@@ -92,6 +93,11 @@
       </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>
